@@ -58,8 +58,8 @@
 </br>
 </br>
 </br>
-<input type = "button" value ="Get Source Code" onClick="window.location.href='http://nikiamil.comule.com/MainConversion.java'"></input>
-<input type="button" value="View Report" onClick="window.location.href='http://nikiamil.comule.com/MainConversion.java'"></input>
+<input type = "button" value ="Get Source Code" onClick="window.location.href='http://nikiamil.comule.com/src2.rar'"></input>
+<input type="button" value="View Report" onClick="window.location.href='http://nikiamil.wordpress.com/2011/12/14/project-3/'"></input>
 </center>
 </form>
 </body>
