@@ -6,16 +6,16 @@ public class Sbean {
 	public Sbean (){
 		
 	}
-	public void setAP (String s){
-		aP = Double.parseDouble(s);
+	public void setAP (double s){
+		aP = s;
 		aP = aP * 18.5;
 	}
-	public void setBP (String s){
-		bP = Double.parseDouble(s);
+	public void setBP (double s){
+		bP = s;
 		bP = bP * 6.95;
 	}
-	public void setCP(String s){
-		cP = Double.parseDouble(s);
+	public void setCP(double s){
+		cP = s;
 		cP = cP * 1.29;
 	}
 	public double getAP(){

@@ -16,7 +16,7 @@
 
 	
 
-<jsp:useBean id="data" class ="Sbean" scope= "session">
+<jsp:useBean id="data" class ="user.Sbean" scope= "session">
 <jsp:setProperty name = "data" property = "AP" value ="0"/>
 <jsp:setProperty name = "data" property = "BP" value ="0"/>
 <jsp:setProperty name = "data" property = "CP" value ="0"/>
@@ -27,27 +27,29 @@
 <td> Coffee   </td>
 <td> ${initParam.CoffeePrice}</td>
 <td> <center><input type = "text"name = "cp" size = "4"></input></center></td>
-<td>${data.getAP}</td>
+<jsp:setProperty name = "data" property = "AP" param ="cp"/>
+<td><jsp:getProperty name = "data" property = "AP"/></td>
 </tr><tr>
 <td> Sugar    </td>
 <td> ${initParam.SugarPrice}</td>
 <td> <center><input type = "text" name = "sp" size = "4"></input></center></td>
-<td> ${data.getBP}</td>
+<jsp:setProperty name = "data" property = "BP" param ="sp"/>
+<td><jsp:getProperty name = "data" property = "BP"/> </td>
 </tr><tr>
 <td> Water    </td>
 <td> ${initParam.WaterPrice}</td>
 <td> <center><input type = "text" name = "wp"size = "4"></input></center></td>
-<td> ${data.getCP}</td>
+<jsp:setProperty name = "data" property = "CP" param ="wp"/>
+<td> <jsp:getProperty name = "data" property = "CP"/> </td>
 </tr><tr>
 <td> TOTAL    </td>
 <td></td><td></td>
-<td> ${data.getTotal}</td>
+<td><jsp:getProperty name = "data" property = "total"/> </td>
 </tr>
 </table>
 
-<jsp:setProperty name = "data" property = "AP" param ="cp"/>
-<jsp:setProperty name = "data" property = "BP" param ="sp"/>
-<jsp:setProperty name = "data" property = "CP" param ="wp"/>
+
+
 
 </br>
 
@@ -56,8 +58,8 @@
 </br>
 </br>
 </br>
-<input type = "button" value ="Get Source Code" onClick="window.location.href='http://nikiamil.comule.com/src2.rar'"></input>
-<input type="button" value="View Report" onClick="window.location.href='http://nikiamil.wordpress.com/2011/12/14/project-3/"></input>
+<input type = "button" value ="Get Source Code" onClick="window.location.href='http://nikiamil.comule.com/MainConversion.java'"></input>
+<input type="button" value="View Report" onClick="window.location.href='http://nikiamil.comule.com/MainConversion.java'"></input>
 </center>
 </form>
 </body>
